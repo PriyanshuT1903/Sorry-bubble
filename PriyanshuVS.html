@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble, Maaf Me Please! 🥺💗</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 15px;
+        }
+        h1 {
+            font-size: 40px;
+            color: #ffccdc;
+        }
+        p {
+            font-size: 22px;
+            margin: 10px 0;
+        }
+        .heart {
+            font-size: 50px;
+            animation: heartbeat 1s infinite alternate;
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.2); }
+        }
+        .btn {
+            font-size: 20px;
+            padding: 10px 20px;
+            margin-top: 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            background-color: #ff4081;
+            color: white;
+        }
+        .btn:hover {
+            background-color: #d81b60;
+        }
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            opacity: 0.8;
+        }
+        audio {
+            display: none; /* Hide the audio player */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Background Video -->
+    <video autoplay loop muted>
+        <source src="file:///C:/Users/Piyush/Downloads/video6111447937735202002.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Background Music -->
+    <audio autoplay loop>
+        <source src="C:\Users\Piyush\Downloads\video6111447937735202002.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="container">
+        <h1>Bubble, Maaf Me Please! &#x1F97A;💗</h1>
+        <p>You are my everything, and I never want to hurt you. I’m really sorry if I made you upset. 💔</p>
+        <p>Will you forgive me? 🥺💗</p>
+        <div class="heart">&#x1F497;</div>
+        <button class="btn" onclick="forgiveMe()">Maaf Kar Diya? &#x1F619;</button>
+    </div>
+
+    <script>
+        function forgiveMe() {
+            document.body.innerHTML = ` 
+                <h1 style='color:#ffccdc;'>Yay! Bubble Forgave Me! &#x1F973;&#x1F497;</h1>
+                <p style='font-size:22px;'>You are the best, and I promise to make it up to you! &#x1F619;💗</p>
+                <p style='font-size: 40px;'>&#x1F97A; &#x1F619; &#x1F497; &#x1F973;</p>
+            `;
+        }
+    </script>
+
+</body>
+</html>
